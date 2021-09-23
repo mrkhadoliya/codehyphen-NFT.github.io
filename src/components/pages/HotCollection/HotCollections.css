@@ -14,7 +14,7 @@
 .avterimg i {
     position: absolute;
     font-size: 20px;
-    color: #107cfe;
+    color: #107cfe !important;
     margin-top: 0rem !important;
     margin-left: 3rem !important;
 }

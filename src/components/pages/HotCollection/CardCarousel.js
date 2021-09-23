@@ -17,17 +17,20 @@ export const CardCarousel = (props) => {
                     image={props.imgsrc}
                     alt="green iguana"
                 />
-                <CardContent>
+                <CardContent sx={{paddingBottom: '0px'}}>
                     <Stack alignItems="center" className="avterimg" spacing={2}> 
                         <Avatar className="avterborder"
                             alt="Remy Sharp"
                             src={props.avtrsrc}
-                            sx={{ width: 65, height: 65, }}
+                            sx={{ width: 55, height: 55, }}
                         />
                         <i className={props.checkicon}></i>
                     </Stack>
                     <Typography textAlign="center" color="white" gutterBottom variant="h5" component="div">
                         <span className="discover">{props.title}</span>
+                    </Typography>  
+                    <Typography textAlign="center" color="white" variant="body2" gutterBottom>
+                        {props.collectionprice}
                     </Typography>  
                 </CardContent> 
             </Card>

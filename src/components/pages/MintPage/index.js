@@ -22,14 +22,7 @@ export default function CenteredGrid() {
     return (
         <main className="mintsbgcolor">
             <Container>
-                <Grid container spacing={2} className={classes.grid}>
-                    {/* <Grid item xs={12} md={12}>
-                        <div className={classes.paper}>
-                            <Typography variant="h2" component="h2" className="textwhite" gutterBottom>
-                                <span className="discover">Hot Collections</span>
-                            </Typography> 
-                        </div>
-                    </Grid> */}
+                <Grid container spacing={2} className={classes.grid}> 
                     <Grid item xs={12} md={4}>
                         <WalletBox 
                          checkicon={SellNFTData[0].checkicon}

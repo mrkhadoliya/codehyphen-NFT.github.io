@@ -14,7 +14,7 @@ const useStyles = makeStyles ((theme) => ({
         gridRow: 1,
     },
     paper: {
-        padding: theme.spacing(2),
+        padding: theme.spacing(1),
         textAlign: 'center',
         color: theme.palette.text.white, 
     }, 
@@ -73,9 +73,8 @@ export const HotBidCard = (props) => {
         }
     });
 
-  return (
-    <Container className="Hot_bids">
-        <Grid spacing={2} container> 
+  return ( 
+        <Grid container spacing={1} className={classes.paper}> 
             <Grid item xs={12} md={12}>
                 <Card className="sellercardbg" sx={{padding:'5px'}}>
                     <CardHeader sx={{padding:'5px'}}
@@ -125,15 +124,16 @@ export const HotBidCard = (props) => {
                             anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                         >
                         <MenuItem>
-                            Share
+                            {props.shareitems}
                         </MenuItem>
                         <MenuItem>
-                            Report
+                            {props.reportitems}
                         </MenuItem>   
                     </Menu>
                     <CardMedia sx={{borderRadius:'5px'}}
-                        component="img" 
-                        image="https://img.rarible.com/prod/image/upload/t_gif_preview/prod-itemImages/0xe03e4721c75188de6dd9ccf4fc0eb7c81399e305:10048/b7ac2cf7"
+                        component="img"
+                        height="160"
+                        image={props.nftimgsrc}
                         alt="Paella dish"
                     />
                     <> 
@@ -149,19 +149,19 @@ export const HotBidCard = (props) => {
                         <Grid spacing={1} container display="flex" justifyContent="space-between">
                             <Grid item sx={6}>
                                 <Typography alignItems="center" justifyContent="start" display="flex" height="100%" style={{padding:'0px'}} variant="subtitle1" gutterBottom component="div">
-                                    <span className="discover">Dog Face #098</span>
+                                    <span className="discover">{props.nfttitle}</span>
                                 </Typography> 
                             </Grid>
                             <Grid item sx={6}>
                                 <Stack>
-                                    <Button variant="text">0.5 ETH</Button>
+                                    <Button variant="text">{props.ethprice}</Button>
                                 </Stack>
                             </Grid>
                         </Grid>
                         <Grid spacing={1} container justifyContent="space-between">
                             <Grid item sx={6}>
-                                <Typography alignItems="center" justifyContent="start" display="flex" height="100%" style={{padding:'0px'}} size="small" gutterBottom component="div">
-                                    Highest bid &nbsp; <span>2/2</span>
+                                <Typography alignItems="center" justifyContent="start" display="flex" height="100%" style={{padding:'0px'}} size="small" gutterBottom >
+                                    {props.highestbid} &nbsp; <span>{props.bidsitems}</span>
                                 </Typography>
                             </Grid>
                             <Grid item sx={6}>
@@ -175,7 +175,6 @@ export const HotBidCard = (props) => {
                     </CardContent> 
                 </Card>
             </Grid>
-        </Grid>
-    </Container>
+        </Grid> 
   );
 }

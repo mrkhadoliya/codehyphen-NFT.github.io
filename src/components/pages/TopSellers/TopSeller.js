@@ -24,10 +24,10 @@ export const TopSeller = (props) => {
                <Grid container spacing={2} className={classes.gridtopsell}>
                     <Grid item xs={12} md={12}>
                         <div className={classes.paper}>
-                            <Typography variant="h3" component="h2" className="textwhite" gutterBottom>
+                            <Typography textAlign="start" variant="h4" component="h2" className="textwhite" gutterBottom>
                                 <span className="discover">Top Collections in 7 days</span>
                             </Typography> 
-                            <Typography variant="h6" component="h2" className="textwhite" gutterBottom>
+                            <Typography textAlign="start" component="h2" className="textwhite" gutterBottom>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </Typography> 
                         </div>
@@ -35,6 +35,7 @@ export const TopSeller = (props) => {
                     <Grid item xs={12} md={3}>
                         <div className={classes.paper}>
                             <SellerCard
+                                numbercount={SellersData[0].numbercount}
                                 avtrsrc={SellersData[0].avtrsrc}
                                 title={SellersData[0].title}
                                 token={SellersData[0].token}
@@ -45,6 +46,7 @@ export const TopSeller = (props) => {
                     <Grid item xs={12} md={3}>
                         <div className={classes.paper}>
                             <SellerCard
+                                numbercount={SellersData[1].numbercount}
                                 avtrsrc={SellersData[1].avtrsrc}
                                 title={SellersData[1].title}
                                 token={SellersData[1].token}
@@ -55,6 +57,7 @@ export const TopSeller = (props) => {
                     <Grid item xs={12} md={3}>
                         <div className={classes.paper}>
                             <SellerCard
+                                numbercount={SellersData[2].numbercount}
                                 avtrsrc={SellersData[2].avtrsrc}
                                 title={SellersData[2].title}
                                 token={SellersData[2].token}
@@ -65,6 +68,7 @@ export const TopSeller = (props) => {
                     <Grid item xs={12} md={3}>
                         <div className={classes.paper}>
                             <SellerCard
+                                numbercount={SellersData[3].numbercount}
                                 avtrsrc={SellersData[3].avtrsrc}
                                 title={SellersData[3].title}
                                 token={SellersData[3].token}

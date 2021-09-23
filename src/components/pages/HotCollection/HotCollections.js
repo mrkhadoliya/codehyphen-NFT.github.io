@@ -27,10 +27,10 @@ export const HotCollections = () => {
                 <Grid spacing={2} container className={classes.gridline}>
                     <Grid item xs={12} md={12}>
                         <div className={classes.paper}>
-                            <Typography variant="h3" component="h2" className="textwhite" gutterBottom>
+                            <Typography textAlign="start" variant="h4" component="h2" className="textwhite" gutterBottom>
                                 <span className="discover">Hot Collections</span>
                             </Typography>
-                            <Typography variant="h6" component="h2" className="textwhite" gutterBottom>
+                            <Typography textAlign="start" component="h2" className="textwhite" gutterBottom>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </Typography> 
                         </div>

@@ -6,13 +6,13 @@
 
 }
 .text_sel {
-    font-weight: bold !important;
+    font-weight: 500 !important;
     text-align: start;
     font-size: 4rem !important; 
     color: white;
 }
 .discover {
-    font-weight: bold;
+    font-weight: 500;
     background: linear-gradient(to right, #007FFF, #c14de7);
     -webkit-background-clip: text;
     background-clip: text;

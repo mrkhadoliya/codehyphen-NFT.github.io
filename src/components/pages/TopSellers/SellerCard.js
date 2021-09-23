@@ -5,7 +5,12 @@ import SellersData from './SellersData'
 export const SellerCard = (props) => {
     return ( 
             <Card className="sellercardbg" sx={{ display: 'flex', padding: '8px' }}>
-                <Avatar 
+                <Box display="grid" justifyContent="center" alignItems="center" height="100" marginRight="10px">
+                    <Typography variant="h6" textAlign="start" color="white" component="div">
+                        {props.numbercount}
+                    </Typography> 
+                </Box>
+                <Avatar to={props.links}
                     sx={{ width: 50, height:50 }}
                     src={props.avtrsrc}
                     alt="Monica Lucas"

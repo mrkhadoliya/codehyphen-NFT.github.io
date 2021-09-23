@@ -9,7 +9,7 @@ export const HotCarousel = () => {
     const breakPoints = [
         {width: 1, itemsToShow: 1},
         {width: 500, itemsToShow: 2},
-        {width: 768, itemsToShow: 3},
+        {width: 768, itemsToShow: 4},
         {width: 1200, itemsToShow: 4}
     ]
 
@@ -22,6 +22,7 @@ export const HotCarousel = () => {
                 checkicon={CollectionData[0].checkicon}
                 title={CollectionData[0].title}
                 links={CollectionData[0].links}
+                collectionprice={CollectionData[0].collectionprice}
              />  
              <CardCarousel 
                 imgsrc={CollectionData[1].imgsrc}
@@ -29,6 +30,7 @@ export const HotCarousel = () => {
                 checkicon={CollectionData[0].checkicon}
                 title={CollectionData[1].title}
                 links={CollectionData[1].links}
+                collectionprice={CollectionData[1].collectionprice}
              />  
              <CardCarousel 
                 imgsrc={CollectionData[2].imgsrc}
@@ -36,6 +38,7 @@ export const HotCarousel = () => {
                 checkicon={CollectionData[0].checkicon}
                 title={CollectionData[2].title}
                 links={CollectionData[2].links}
+                collectionprice={CollectionData[2].collectionprice}
              />  
              <CardCarousel 
                 imgsrc={CollectionData[3].imgsrc}
@@ -43,6 +46,7 @@ export const HotCarousel = () => {
                 checkicon={CollectionData[0].checkicon}
                 title={CollectionData[3].title}
                 links={CollectionData[3].links}
+                collectionprice={CollectionData[3].collectionprice}
              />  
              <CardCarousel 
                 imgsrc={CollectionData[0].imgsrc}
@@ -50,6 +54,7 @@ export const HotCarousel = () => {
                 checkicon={CollectionData[0].checkicon}
                 title={CollectionData[0].title}
                 links={CollectionData[0].links}
+                collectionprice={CollectionData[0].collectionprice}
              />  
              <CardCarousel 
                 imgsrc={CollectionData[1].imgsrc}
@@ -57,6 +62,7 @@ export const HotCarousel = () => {
                 checkicon={CollectionData[0].checkicon}
                 title={CollectionData[1].title}
                 links={CollectionData[1].links}
+                collectionprice={CollectionData[1].collectionprice}
              />  
              <CardCarousel 
                 imgsrc={CollectionData[2].imgsrc}
@@ -64,6 +70,7 @@ export const HotCarousel = () => {
                 checkicon={CollectionData[0].checkicon}
                 title={CollectionData[2].title}
                 links={CollectionData[2].links}
+                collectionprice={CollectionData[2].collectionprice}
              />  
          </Carousel>
     )

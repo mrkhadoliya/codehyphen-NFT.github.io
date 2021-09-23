@@ -7,6 +7,7 @@ const CollectionData = [
         title: 'Abstraction',
         links: '#',
         checkicon: 'fas fa-badge-check',
+        collectionprice: '$65,632',
     },
     {
         imgsrc: 'https://www.designesia.com/themes/gigaland/images/collections/coll-4.jpg',
@@ -14,6 +15,7 @@ const CollectionData = [
         title: 'Rohit Kumar',
         links: '#',
         checkicon: 'fas fa-badge-check',
+        collectionprice: '$65,632',
     },
     {
         imgsrc: 'https://www.designesia.com/themes/gigaland/images/collections/coll-5.jpg',
@@ -21,6 +23,7 @@ const CollectionData = [
         title: 'Skecthify',
         links: '#',
         checkicon: 'fas fa-badge-check',
+        collectionprice: '$65,632',
     },
     {
         imgsrc: 'https://www.designesia.com/themes/gigaland/images/items/static-3.jpg',
@@ -28,6 +31,7 @@ const CollectionData = [
         title: 'Pramod Sir',
         links: '#',
         checkicon: 'fas fa-badge-check',
+        collectionprice: '$65,632',
     },
      
 ]

@@ -26,22 +26,18 @@ export const HotBidIndex = () => {
                 <Grid spacing={2} container>
                     <Grid item xs={12} md={12}>
                         <div className={classes.paper}>
-                            <Typography variant="h3" component="h2" className="textwhite" gutterBottom>
+                            <Typography variant="h4" textAlign="start" component="h2" className="textwhite" gutterBottom>
                                 <span className="discover">Hot bids </span>
                             </Typography>
-                            <Typography variant="h6" component="h2" className="textwhite" gutterBottom>
+                            <Typography textAlign="start" component="h2" className="textwhite" gutterBottom>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </Typography> 
                         </div>
                     </Grid> 
                 </Grid>
              </Container>
-            <Container maxWidth="xl">
-                <Grid spacing={2} container> 
-                    <Grid item xs={12} md={12}>  
-                        <HotBidCarousel/>
-                    </Grid>
-                </Grid>
+            <Container maxWidth="xl">   
+                <HotBidCarousel/> 
              </Container>
          </main>
     )

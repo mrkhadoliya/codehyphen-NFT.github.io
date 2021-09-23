@@ -20,7 +20,7 @@ class Navbar extends Component {
                 <Container maxWidth="xxl">
                     <nav className="NavbarItem">
                         {/* <h1 className="navbar-logo">DODO <i className="fab fa-react"></i></h1> */}
-                        <img className="navbar-logo" src="./images/logo.png" width="180px" />
+                        <img className="navbar-logo" src="./images/logo.png" width="220px" />
                         <div className="menu-icon" onClick={this.handleClick} >
                             <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                         </div>
